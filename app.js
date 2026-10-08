@@ -53,8 +53,7 @@ Exercise 4: Access an array element
 Complete Exercise 4 in the space below:
 */
 
-const favFood = foods.indexOf("pizza");
-console.log(favFood);
+const favFood = foods[1];
 
 console.log("Exercise 4 result:", favFood);
 
@@ -68,7 +67,7 @@ Exercise 5: Insert an element between two others
 Complete Exercise 5 in the space below:
 */
 const pizzaPosition = foods.indexOf("pizza") + 1;
-console.log(foods.splice(pizzaPosition, 0, "tofu"));
+foods.splice(pizzaPosition, 0, "tofu");
 
 console.log("Exercise 5 result:", foods);
 
@@ -82,8 +81,7 @@ Exercise 6: Replace elements
 Complete Exercise 6 in the space below:
 */
 const pizzaPositionReplace = foods.indexOf("pizza");
-
-console.log(foods.splice(pizzaPositionReplace, 1, "sushi", "cupcake"));
+foods.splice(pizzaPositionReplace, 1, "sushi", "cupcake");
 
 console.log("Exercise 6 result:", foods);
 
@@ -101,7 +99,6 @@ Complete Exercise 7 in the space below:
 */
 
 const yummy = foods.slice(1, 3);
-console.log(yummy);
 
 console.log("Exercise 7 result:", yummy);
 
@@ -119,7 +116,6 @@ Complete Exercise 8 in the space below:
 */
 
 const soyIdx = foods.indexOf("tofu");
-console.log(soyIdx);
 
 console.log("Exercise 8 result:", soyIdx);
 
@@ -140,7 +136,6 @@ Complete Exercise 9 in the space below:
 */
 
 const allFoods = foods.join(" -> ");
-console.log(allFoods);
 
 console.log("Exercise 9 result:", allFoods);
 
@@ -158,7 +153,6 @@ Complete Exercise 10 in the space below:
 */
 
 const hasSoup = foods.includes("soup");
-console.log(hasSoup);
 
 console.log("Exercise 10 result:", hasSoup);
 
@@ -182,8 +176,6 @@ const odds = [];
 for (let num of nums) {
   if (num % 2 !== 0) odds.push(num);
 }
-
-console.log(odds);
 
 console.log("Exercise 11 result:", odds);
 
@@ -248,8 +240,6 @@ const numArrays = [
 const lengthOfArray = numArrays.length - 1;
 const numList = numArrays[lengthOfArray];
 
-console.log(numList);
-
 console.log("Exercise 13 result:", numList);
 
 // =======================================================
@@ -266,8 +256,6 @@ Complete Exercise 14 in the space below:
 */
 
 const num = numArrays[2][1];
-
-console.log(num);
 
 console.log("Exercise 14 result:", num);
 
